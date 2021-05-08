@@ -65,10 +65,17 @@ namespace Lab9
             }
             averageLabel.Text = mat.ToString();
             varietyLabel.Text = disp.ToString();
-            xiLabel.Text = xiRes.ToString();
             averageError.Text = matError.ToString();
             varienceError.Text = dispError.ToString();
             chart1.Series[0].IsValueShownAsLabel = true;
+            if (xiRes > 11.07)
+            {
+                xiLabel.Text = xiRes + " > 11.07 is true";
+            }
+            else
+            {
+                xiLabel.Text = xiRes + " > 11.07 is false";
+            }
         }
 
         private List<double> Count(int d, List<double> pr)
