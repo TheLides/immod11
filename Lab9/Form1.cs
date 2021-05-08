@@ -31,9 +31,9 @@ namespace Lab9
                 (double) prob5.Value
             };
             int days = (int)daysNumeric.Value;
-            if (probs[0] + probs[1] + probs[2] + probs[3] + probs[4] > 1)
+            if (probs[0] + probs[1] + probs[2] + probs[3] + probs[4] != 1)
             {
-                MessageBox.Show("Probabilities summ should be less than 1");
+                MessageBox.Show("Probabilities summ should be equal to 1");
             }
             else
             {
